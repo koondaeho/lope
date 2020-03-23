@@ -1,0 +1,68 @@
+<section id="picnic" class="section">
+    <div class="button-group" role="group" aria-label="Basic example">
+        <button type="button" class="btn round-button" *ngFor="let day of dates">{{day.date}}</button>
+    </div>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">A set</th>
+                    <th scope="col">B set</th>
+                    <th scope="col">C set</th>
+                    <th scope="col">D set</th>
+                    <th scope="col">E set</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>12:00 ~ 14:00</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th>14:30 ~ 17:30</th>
+                    <td>Jacob</td>
+                    <td (click)="addPicnic(1)"></td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th>18:00 ~ 20:30</th>
+                    <td>Larry</td>
+                    <td>the Bird</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                    <td>@twitter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div *ngIf="view">
+        <form>
+            <small id="emailHelp" class="form-text text-muted">{{timeText}}</small>
+            <div class="form-group picnic-form">
+                <div class="item">
+                    <label for="exampleInputEmail1">대표이름</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="item">
+                    <label for="exampleInputEmail1">연락처 </label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="item">
+                    <label for="exampleInputEmail1">인원</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                </div>
+                <div class="item">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

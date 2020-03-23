@@ -1,0 +1,42 @@
+.round-button {
+  border: 1px black solid;
+  margin: 0 4px;
+}
+
+.button-group {
+  margin-bottom: 20px;
+
+}
+
+table {
+  th {
+    width: 16%;
+  }
+
+  td {
+    width: 16%;
+  }
+
+  tr {
+    height: 150px;
+  }
+}
+
+.picnic-form {
+  float: left;
+  width: 100%;
+
+  label {
+    width: 80px;
+  }
+
+  input {
+    width: 200px;
+    display: inline-block;
+    margin: 0 20px;
+  }
+
+  .item {
+    display: inline-block;
+  }
+}
